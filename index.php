@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="home-styles.css">
 </head>
 <body>
-    <!-- <?php include($_SERVER['DOCUMENT_ROOT'] . "/global/header.php");?> -->
+    
     <main>
         <h1 class="mono home-hero"><span class="theme-colour">&lt;</span>Thomas Boxall<span class="theme-colour">/&gt;</span></h1>
         <p class="home-subtitle">Can sometimes make computers do things</p>
         <div class="home-buttons">
-            <a class="home-button-single" href="#">
+            <a class="home-button-single" href="/about">
                 <p>More about me</p>
             </a>
-            <a class="home-button-single" href="#">
+            <a class="home-button-single" href="/projects">
                 <p>My projects</p>
             </a>
         </div>
