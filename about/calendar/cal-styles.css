@@ -1,84 +1,92 @@
 .cal{
     border-collapse: collapse;
     width: 100%;
-  }
-  .cal > td{
+    margin: 5px auto;
+}
+.cal > td{
     padding: 0;
     margin: 0;
-  }
-  .cal-time-row{
-    height: 10px;
-  }
-  .cal-time-col{
+}
+.cal-time-row{
+height:  10px;
+}
+.cal-time-col{
     width: 3rem;
     border-bottom: 1px solid #696969;
-  }
-  .cal-event-heavy{
+}
+.cal-day-col{
+    width: 13.57%;
+}
+.cal-event-heavy{
     border-bottom-color: #696969;
-  }
-  .cal-event-light{
+}
+.cal-event-light{
     border-bottom-color: #A9A9A9;
-  }
-  .cal-event-cell{
+}
+
+.cal-event-cell{
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-left: 2px solid #696969;
     border-right: 2px solid #696969;
-  }
-  .cal-event-free{
+}
+.cal-event-cell:last-of-type{
+    border-right: none;
+}
+.cal-event-free{
     background-color: lightgreen;
-  }
-  .cal-event-busy{
+}
+.cal-event-busy{
     background-color: red;
-    border-bottom-color: red;
-  }
-  th{
+    border-bottom: none;
+}
+th{
     position: sticky;
     top: 0;
     background-color: var(--backColour);
-  }
-  th, tr:last-of-type{
+}
+th, tr:last-of-type{
     border-bottom: 2px solid #696969;
-  }
-  .cal-nav > form{
+}
+.cal-nav > form{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 1em;
-  }
-  
-  .cal-nav > form > button{
+}
+
+.cal-nav > form > button{
     margin: 1em auto 1em auto;
     border-radius: 25px;
     width: 200px;
     height: 50px;
     text-align: center;
     text-decoration: none;
-  }
-  .cal-nav > form > button:nth-child(odd){
-      border: 1px solid var(--thomasColour);
-      color: var(--foreColour);
-      background-color: var(--backColour);
-  }
-  
-  .cal-nav > form > button:nth-child(odd):hover{
-      background-color: var(--thomasColour);
-      color: var(--backColour);
-  }
-  
-  .cal-nav > form > button:nth-child(even){
-      background-color: var(--thomasColour);
-      color: var(--backColour);
-  }
-  
-  .cal-nav > form > button:nth-child(even):hover{
-      background-color: transparent;
-      border: 1px solid var(--thomasColour);
-      color: var(--foreColour);
-  }
-  .cal-nav > form > button:nth-child(1){
+}
+.cal-nav > form > button:nth-child(odd){
+    border: 1px solid var(--thomasColour);
+    color: var(--foreColour);
+    background-color: var(--backColour);
+}
+
+.cal-nav > form > button:nth-child(odd):hover{
+    background-color: var(--thomasColour);
+    color: var(--backColour);
+}
+
+.cal-nav > form > button:nth-child(even){
+    background-color: var(--thomasColour);
+    color: var(--backColour);
+}
+
+.cal-nav > form > button:nth-child(even):hover{
+    background-color: transparent;
+    border: 1px solid var(--thomasColour);
+    color: var(--foreColour);
+}
+.cal-nav > form > button:nth-child(1){
     margin-left: 0px;
-  }
-  .cal-nav > form > button:nth-child(3){
+}
+.cal-nav > form > button:nth-child(3){
     margin-right: 0px;
-  }
+}

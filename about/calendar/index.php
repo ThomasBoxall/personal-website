@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Boxall | Contact</title>
+    <title>Thomas Boxall | Calendar</title>
     <link rel="stylesheet" href="/global/global.css">
     <link rel="stylesheet" href="cal-styles.css">
 </head>
@@ -42,6 +42,8 @@ function updateEventTimeZone($event){
 
 // main body of code to open ICS files and produce $events containing just events for current week (as according to $weekStartDate and $weekEndDate)
 $ics_files = array('https://calendar.google.com/calendar/ical/thomasboxall6%40googlemail.com/public/basic.ics', 'https://calendar.google.com/calendar/ical/thomas.boxall%40woodcraft.org.uk/public/basic.ics', 'https://calendar.google.com/calendar/ical/up2108121%40myport.ac.uk/public/basic.ics', 'https://calendar.google.com/calendar/ical/goa97sli3i79grartqjblp6lrjjj55cd%40import.calendar.google.com/public/basic.ics');
+// use line above in production and line below in local testing as WSL is slow! REMEMBER TO UNCOMMENT THE LINE NOT BEING USED! 
+// $ics_files = array('personal.ics', 'uni.ics', 'ut.ics', 'wcf.ics');
 
 $events = array(); // create an array to store the event data
 
@@ -88,13 +90,13 @@ $headerDate = clone $weekStartDate->modify('-1 weeks'); // this line is *really*
   <thead>
     <tr>
       <th class='cal-time-col'>Time</th>
-      <th>Monday<br><?php echo $headerDate->format('jS M'); ?></th>
-      <th>Tuesday<br><?php echo $headerDate->modify('+1 day')->format('jS M'); ?></th>
-      <th>Wednesday<br><?php echo $headerDate->modify('+1 day')->format('jS M'); ?></th>
-      <th>Thursday<br><?php echo $headerDate->modify('+1 day')->format('jS M'); ?></th>
-      <th>Friday<br><?php echo $headerDate->modify('+1 day')->format('jS M'); ?></th>
-      <th>Saturday<br><?php echo $headerDate->modify('+1 day')->format('jS M'); ?></th>
-      <th>Sunday<br><?php echo $headerDate->modify('+1 day')->format('jS M'); ?></th>
+      <th class='cal-day-col'>Monday<br><?php echo $headerDate->format('jS M'); ?></th>
+      <th class='cal-day-col'>Tuesday<br><?php echo $headerDate->modify('+1 day')->format('jS M'); ?></th>
+      <th class='cal-day-col'>Wednesday<br><?php echo $headerDate->modify('+1 day')->format('jS M'); ?></th>
+      <th class='cal-day-col'>Thursday<br><?php echo $headerDate->modify('+1 day')->format('jS M'); ?></th>
+      <th class='cal-day-col'>Friday<br><?php echo $headerDate->modify('+1 day')->format('jS M'); ?></th>
+      <th class='cal-day-col'>Saturday<br><?php echo $headerDate->modify('+1 day')->format('jS M'); ?></th>
+      <th class='cal-day-col'>Sunday<br><?php echo $headerDate->modify('+1 day')->format('jS M'); ?></th>
     </tr>
   </thead>
   <tbody>
