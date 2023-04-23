@@ -39,3 +39,7 @@ main{
 .red{
     background-color: red;
 }
+
+.italic{
+    font-style: italic;
+}
