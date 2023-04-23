@@ -1,1 +1,3 @@
 ErrorDocument 404 /global/404.html
+
+Redirect /calendar /about/calendar
