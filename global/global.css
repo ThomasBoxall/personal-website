@@ -47,3 +47,9 @@ main{
 a{
     color: var(--foreColour);
 }
+
+@media screen and (max-width: 430px) {
+    main{
+        width: 100%;
+    }
+}
