@@ -43,3 +43,7 @@ main{
 .italic{
     font-style: italic;
 }
+
+a{
+    color: var(--foreColour);
+}
