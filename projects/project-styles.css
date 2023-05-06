@@ -1,0 +1,161 @@
+/* TOP LINE AND PROJECT INFO */
+.top-line{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.top-line p{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 0.5em;
+    border-radius: 25px;
+}
+
+.top-line p:nth-child(1){
+    margin-right: 0.5em;
+    margin-left: 0;
+}
+
+.top-line p:nth-last-child(1){
+    margin-right: 0;
+    margin-left: 0.5em;
+}
+
+.ps-active{
+    background-color: green;
+}
+
+.ps-lts{
+    background-color: blue;
+}
+
+.ps-archive{
+    background-color: red;
+}
+
+/* PROJECT GALLERY & CARDS */
+.project-gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.project-card{
+    border-radius: 10px 20px 10px 20px;
+    max-width: 350px;
+    height: 300px;
+    margin: 1em;
+    position: relative;
+    /* border: 1px solid grey; */
+    /* box-shadow:0px 0px 8px grey; */
+    overflow: hidden;
+}
+
+.project-image{
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: blur(2px);
+    opacity: 0.3;
+    transition: transform 250ms;
+}
+
+.project-title{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 200ms;
+}
+
+.project-blurb{
+    position: absolute;
+    top: 65%;
+    left: 20px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 200ms;
+}
+
+.project-card a:hover .project-title{
+    visibility: visible;
+    opacity: 1;
+}
+
+.project-card a:hover .project-blurb{
+    visibility: visible;
+    opacity: 1;
+}
+
+.project-card a:hover .project-image{
+    transform: scale(1.5);
+}
+
+
+
+/* PROJECT PAGE IMAGE GALLERY STYLES */
+
+.project-image-gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: left;
+}
+
+.project-image-gallery-card{
+    border-radius: 10px;
+    max-width: 200px;
+    height: 200px;
+    margin: 0.25em;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.project-image-gallery-image{
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox-hide{
+    display: none;
+}
+
+.lightbox-show{
+    display:flex;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
