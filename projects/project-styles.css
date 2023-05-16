@@ -141,6 +141,16 @@
     max-height: 90%;
 }
 
+.lightbox p{
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    color: var(--foreColour);
+    position: absolute;
+    background-color: var(--backColour);
+    border-radius: 10px;
+}
+
 .lightbox-hide{
     display: none;
 }
@@ -158,4 +168,5 @@
     border: none;
     padding: 10px 15px;
     cursor: pointer;
+    border-radius: 10px;
 }

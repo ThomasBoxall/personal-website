@@ -10,11 +10,17 @@ gallery.addEventListener('click', function (event) {
     lightboxImg.id = "lightboxImg"
     lightboxImg.src = event.target.src || event.target.parentNode.href;
     lightbox.appendChild(lightboxImg);
+
+    let imgCaption = document.createElement("p");
+    imgCaption.textContent = event.target.alt;
+    imgCaption.id = "imgCaption";
+    lightbox.appendChild(imgCaption);
 });
 close.addEventListener('click', function () {
     // lightbox.style.display = 'none';
     lightbox.classList = "lightbox lightbox-hide"
-    lightbox.removeChild(lightboxImg);
+    lightbox.removeChild(document.getElementById("lightboxImg"));
+    lightbox.removeChild(document.getElementById("imgCaption"));
 });
 
 // adapted from https://www.tutorialspoint.com/how-to-create-image-lightbox-gallery-using-html-css-and-javascript

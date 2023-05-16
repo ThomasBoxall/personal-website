@@ -17,8 +17,8 @@
         <div class="top-line">
             <p class="ps-active">active</p>
             <p>Apr '23 - now </p>
-            <p><a href="https://jailbreakgame.com">View live deployment <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
-            <p><a href="https://github.com/ThomasBoxall/jail-break-game">View source <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+            <p><a href="https://jailbreakgame.com" target="_blank">View live deployment <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+            <p><a href="https://github.com/ThomasBoxall/jail-break-game" target="_blank">View source <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
         </div>
         
 
@@ -32,9 +32,18 @@
             <div class="project-image-gallery-card">
                 <img src="../assets/jailbreak-win.png" alt="JailBreak! Winning page" class="project-image-gallery-image">
             </div>
+            <div class="project-image-gallery-card">
+                <img src="../assets/jailbreak-home-light.png" alt="JailBreak! Home page (light theme)" class="project-image-gallery-image">
+            </div>
+            <div class="project-image-gallery-card">
+                <img src="../assets/jailbreak-stage-light.png" alt="JailBreak! Stage (light theme)" class="project-image-gallery-image">
+            </div>
+            <div class="project-image-gallery-card">
+                <img src="../assets/jailbreak-win-light.png" alt="JailBreak! Winning page (light theme)" class="project-image-gallery-image">
+            </div>
         </div>
         <div class="lightbox lightbox-hide">
-            <button class="close">X</button>
+            <button class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
         </div>
 
         <p>JailBreak! Game is a <span class="italic">Choose Your Own Path</span> (CYOP) adventure game. It was built for the University of Portsmouth School of Criminology and Criminal Justice Pint of Science event in May 2023.</p>
