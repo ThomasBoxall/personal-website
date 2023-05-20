@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/global/favicon.png" type="image/x-icon">
-    <title>Thomas Boxall | Calendar</title>
+    <title>Calendar| About | Thomas Boxall</title>
     <link rel="stylesheet" href="/global/global.css">
     <link rel="stylesheet" href="cal-styles.css">
 </head>
