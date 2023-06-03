@@ -42,9 +42,9 @@ function updateEventTimeZone($event){
 }
 
 // main body of code to open ICS files and produce $events containing just events for current week (as according to $weekStartDate and $weekEndDate)
-// $ics_files = array('https://calendar.google.com/calendar/ical/thomasboxall6%40googlemail.com/public/basic.ics', 'https://calendar.google.com/calendar/ical/thomas.boxall%40woodcraft.org.uk/public/basic.ics', 'https://calendar.google.com/calendar/ical/up2108121%40myport.ac.uk/public/basic.ics', 'https://calendar.google.com/calendar/ical/goa97sli3i79grartqjblp6lrjjj55cd%40import.calendar.google.com/public/basic.ics');
+$ics_files = array('https://calendar.google.com/calendar/ical/thomasboxall6%40googlemail.com/public/basic.ics', 'https://calendar.google.com/calendar/ical/thomas.boxall%40woodcraft.org.uk/public/basic.ics', 'https://calendar.google.com/calendar/ical/up2108121%40myport.ac.uk/public/basic.ics', 'https://calendar.google.com/calendar/ical/goa97sli3i79grartqjblp6lrjjj55cd%40import.calendar.google.com/public/basic.ics');
 // use line above in production and line below in local testing as WSL is slow! REMEMBER TO UNCOMMENT THE LINE NOT BEING USED! 
-$ics_files = array('personal.ics', 'uni.ics', 'ut.ics', 'wcf.ics');
+// $ics_files = array('personal.ics', 'uni.ics', 'ut.ics', 'wcf.ics');
 
 $events = array(); // create an array to store the event data
 
