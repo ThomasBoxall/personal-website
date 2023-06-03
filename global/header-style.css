@@ -18,7 +18,7 @@ header{
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #fff;
+  color: var(--foreColour);
   padding: 10px 10px 10px 10px;
 }
 
@@ -36,11 +36,13 @@ header{
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: #efefef;
+  color: var(--foreColour);
+  border-radius: 10px;
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--thomasColour);
+  color: var(--backColour);
 }
 
 .nav > #nav-check {
@@ -62,7 +64,7 @@ header{
     margin-left: 1em;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--backColour);
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -71,10 +73,10 @@ header{
     border-top: 2px solid #eee;
   }
   .nav > .nav-links {
-    position: absolute;
+    /* position: absolute; */
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: var(--backColour);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
