@@ -17,35 +17,6 @@
     justify-content: center;
 }
 
-.home-button-single{
-    margin: 1em;
-    border-radius: 25px;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.home-button-single:nth-child(odd){
-    border: 1px solid var(--thomasColour);
-    color: var(--foreColour);
-}
-
-.home-button-single:nth-child(odd):hover{
-    background-color: var(--thomasColour);
-    color: var(--backColour);
-}
-
-.home-button-single:nth-child(even){
-    background-color: var(--thomasColour);
-    color: var(--backColour);
-}
-
-.home-button-single:nth-child(even):hover{
-    background-color: transparent;
-    border: 1px solid var(--thomasColour);
-    color: var(--foreColour);
-}
 
 @media screen and (max-width: 430px) {
     .home-hero{

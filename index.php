@@ -15,10 +15,10 @@
         <h1 class="mono home-hero"><span class="theme-colour">&lt;</span>Thomas Boxall<span class="theme-colour">/&gt;</span></h1>
         <p class="home-subtitle">Can sometimes make computers do things</p>
         <div class="home-buttons">
-            <a class="home-button-single" href="/about">
+            <a class="theme-button theme-button-secondary" href="/about">
                 <p>More about me</p>
             </a>
-            <a class="home-button-single" href="/projects">
+            <a class="theme-button theme-button-primary" href="/projects">
                 <p>My projects</p>
             </a>
         </div>

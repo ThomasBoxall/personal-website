@@ -32,7 +32,7 @@ main{
 
 .alert-box{
     background-color: grey;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 0.5em;
 }
 
@@ -45,6 +45,40 @@ main{
 }
 
 a{
+    color: var(--foreColour);
+}
+
+/* Buttons */
+
+.theme-button{
+    margin: 1em;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.theme-button-secondary{
+    background-color: var(--backColour);
+    border: 1px solid var(--thomasColour);
+    color: var(--foreColour);
+}
+
+.theme-button-secondary:hover{
+    background-color: var(--thomasColour);
+    color: var(--backColour);
+}
+
+.theme-button-primary{
+    background-color: var(--thomasColour);
+    color: var(--backColour);
+}
+
+.theme-button-primary:hover{
+    background-color: transparent;
+    border: 1px solid var(--thomasColour);
     color: var(--foreColour);
 }
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/global/favicon.png" type="image/x-icon">
-    <title>Calendar| About | Thomas Boxall</title>
+    <title>Calendar | About | Thomas Boxall</title>
     <link rel="stylesheet" href="/global/global.css">
     <link rel="stylesheet" href="cal-styles.css">
 </head>
@@ -42,9 +42,9 @@ function updateEventTimeZone($event){
 }
 
 // main body of code to open ICS files and produce $events containing just events for current week (as according to $weekStartDate and $weekEndDate)
-$ics_files = array('https://calendar.google.com/calendar/ical/thomasboxall6%40googlemail.com/public/basic.ics', 'https://calendar.google.com/calendar/ical/thomas.boxall%40woodcraft.org.uk/public/basic.ics', 'https://calendar.google.com/calendar/ical/up2108121%40myport.ac.uk/public/basic.ics', 'https://calendar.google.com/calendar/ical/goa97sli3i79grartqjblp6lrjjj55cd%40import.calendar.google.com/public/basic.ics');
+// $ics_files = array('https://calendar.google.com/calendar/ical/thomasboxall6%40googlemail.com/public/basic.ics', 'https://calendar.google.com/calendar/ical/thomas.boxall%40woodcraft.org.uk/public/basic.ics', 'https://calendar.google.com/calendar/ical/up2108121%40myport.ac.uk/public/basic.ics', 'https://calendar.google.com/calendar/ical/goa97sli3i79grartqjblp6lrjjj55cd%40import.calendar.google.com/public/basic.ics');
 // use line above in production and line below in local testing as WSL is slow! REMEMBER TO UNCOMMENT THE LINE NOT BEING USED! 
-// $ics_files = array('personal.ics', 'uni.ics', 'ut.ics', 'wcf.ics');
+$ics_files = array('personal.ics', 'uni.ics', 'ut.ics', 'wcf.ics');
 
 $events = array(); // create an array to store the event data
 
@@ -77,9 +77,9 @@ foreach ($ics_files as $ics_file) {
 
 <div class="cal-nav">
   <form method="get">
-    <button type="submit" name="week" value="<?php echo $weekStartDate->modify('-1 weeks')->format('Y-m-d'); ?>">Previous week</button>
-    <button type="submit" name="week" value="<?php echo $thisWeek->format('Y-m-d'); ?>">Current week</button>
-    <button type="submit" name="week" value="<?php echo $weekStartDate->modify('+2 weeks')->format('Y-m-d'); ?>">Next week</button>
+    <button class="theme-button theme-button-secondary" type="submit" name="week" value="<?php echo $weekStartDate->modify('-1 weeks')->format('Y-m-d'); ?>">Previous week</button>
+    <button class="theme-button theme-button-primary" type="submit" name="week" value="<?php echo $thisWeek->format('Y-m-d'); ?>">Current week</button>
+    <button class="theme-button theme-button-secondary" type="submit" name="week" value="<?php echo $weekStartDate->modify('+2 weeks')->format('Y-m-d'); ?>">Next week</button>
   </form>
 </div>
 
