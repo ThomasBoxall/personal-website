@@ -31,6 +31,13 @@
                     <p class="project-blurb">A calculator for modules based on assessment scores and their weightings</p>
                 </a>
             </div>
+            <div class="project-card">
+                <a href="personal-website/">
+                    <img src="assets/pw-v3-home.png" alt="Personal Website Home " class="project-image">
+                    <h2 class="project-title">Personal Website</h2>
+                    <p class="project-blurb">My personal project and skill showcase website</p>
+                </a>
+            </div>
         </div>
 
         <h2>Old projects</h2>
