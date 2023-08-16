@@ -1,0 +1,12 @@
+.skill-set{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.skill-set > i{
+    padding: 0.5em;
+    position: relative;
+    font-size: 300%;
+}

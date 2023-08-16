@@ -12,7 +12,8 @@
     <?php include($_SERVER['DOCUMENT_ROOT'] . "/global/header.php");?>
     <main>
         <h1>Contact</h1>
-        <?php include($_SERVER['DOCUMENT_ROOT'] . "/global/under-construction.php");?>
+        <p>Want to get in touch with me?</p>
+        <p>Drop me an email to website-contact[at]thomasboxall.net</p>
     </main>
 </body>
 </html>
