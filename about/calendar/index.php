@@ -15,6 +15,11 @@
         <h1>Calendar</h1>
         <p>Here's a <span class=italic>Cunning Calendar Widget</span> which allows you to stalk me!. No, seriously, you can stalk me using this!</p>
         <p>I actively use four Google Calendars. This makes it a real pain to track me down to schedule a meeting with me. Google doesn't offer a convenient way to merge multiple calendars into one to make it sharable (as that would make life far too easy); so I've produced this availability tracker.</p>
+        <div class="alert-box red">
+          <h2>Invalid Data</h2>
+          <p>Google, in their infinite wisdom, have changed how sharing works on Google Calendars - thus this widget no longer works. Please contact me if you want to schedule a meeting with me and I'll send you a screenshot of my calendar</p>
+          <p>Much sadge :(</p>
+      </div>
         <?php
 // setup $weekStartDate and $weekEndDate
 $thisWeek = new DateTime('Monday this week');
@@ -42,7 +47,12 @@ function updateEventTimeZone($event){
 }
 
 // main body of code to open ICS files and produce $events containing just events for current week (as according to $weekStartDate and $weekEndDate)
-$ics_files = array('https://calendar.google.com/calendar/ical/thomasboxall6%40googlemail.com/public/basic.ics', 'https://calendar.google.com/calendar/ical/thomas.boxall%40woodcraft.org.uk/public/basic.ics', 'https://calendar.google.com/calendar/ical/up2108121%40myport.ac.uk/public/basic.ics', 'https://calendar.google.com/calendar/ical/goa97sli3i79grartqjblp6lrjjj55cd%40import.calendar.google.com/public/basic.ics');
+$ics_files = array('https://calendar.google.com/calendar/ical/thomasboxall6%40googlemail.com/public/basic.ics', // personal
+ 'https://calendar.google.com/calendar/ical/thomas.boxall%40woodcraft.org.uk/public/basic.ics', // wcf
+ 'https://calendar.google.com/calendar/ical/up2108121%40myport.ac.uk/public/basic.ics', // uni
+ 'https://ith02.port.ac.uk/public/app/rota/php/vcal.php?token=e9e17b976e7cf1e33326735bed2c49bfada1663a' // ith02
+
+);
 // use line above in production and line below in local testing as WSL is slow! REMEMBER TO UNCOMMENT THE LINE NOT BEING USED! 
 // $ics_files = array('personal.ics', 'uni.ics', 'ut.ics', 'wcf.ics');
 
